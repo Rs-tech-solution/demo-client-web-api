@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {  
+    "module": "esnext",
+    "target": "es6",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "outDir": "./dist",
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@Routes/*": ["Routes/*"],
+      "@Middlewares/*": ["Middlewares/*"],
+      "@Controllers/*": ["Controllers/*"],
+      "@Services/*": ["Services/*"],
+      "@Helpers/*": ["Helpers/*"],
+      "@Models/*": ["Models/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.js"],
+  "exclude": ["node_modules"]
+}
