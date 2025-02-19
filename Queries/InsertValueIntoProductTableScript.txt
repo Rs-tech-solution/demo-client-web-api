@@ -1,0 +1,1 @@
+INSERT INTO `sakila`.`products` (`id`, `name`, `description`, `amount`, `quantity`, `image`, `created_at`, `updated_at`) VALUES ('1', '5 Kg Dal', 'created for testing purpose', '200', '25', 'ttps://dkprodimages.gumlet.io/catalogue/1033201523grocery%20kit%202025%20jan%2015-01.jpg?format=webp&w=320&dpr=1.0', '2025-02-03', '2025-02-03');

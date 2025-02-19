@@ -1,0 +1,10 @@
+CREATE TABLE `sakila`.`products` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NULL,
+  `description` LONGTEXT NULL,
+  `amount` INT NULL,
+  `quantity` INT NULL,
+  `image` VARCHAR(512) NULL,
+  `created_at` DATE NULL,
+  `updated_at` DATE NULL,
+  PRIMARY KEY (`id`));

@@ -1,0 +1,3 @@
+UPDATE `sakila`.`campaigns` SET `campaign_updates_id` = '1' WHERE (`id` = '1');
+UPDATE `sakila`.`campaigns` SET `campaign_updates_id` = '2' WHERE (`id` = '2');
+UPDATE `sakila`.`campaigns` SET `campaign_updates_id` = '3' WHERE (`id` = '3');

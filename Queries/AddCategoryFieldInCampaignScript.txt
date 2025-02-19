@@ -1,0 +1,7 @@
+ALTER TABLE `sakila`.`campaigns`
+ADD COLUMN `category_id` INT NULL AFTER `campaign_updates_id`,
+ADD CONSTRAINT `fk_campaigns_category`
+    FOREIGN KEY (`category_id`)
+    REFERENCES `campaign_category` (`id`)
+    ON DELETE SET NULL
+    ON UPDATE CASCADE;

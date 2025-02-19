@@ -1,0 +1,4 @@
+CREATE TABLE `sakila`.`campaign_updates` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `content` LONGTEXT NULL DEFAULT NULL,
+  PRIMARY KEY (`id`));

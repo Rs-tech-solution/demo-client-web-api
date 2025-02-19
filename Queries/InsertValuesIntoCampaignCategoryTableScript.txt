@@ -1,0 +1,8 @@
+INSERT INTO `sakila`.`campaign_category` (`id`, `campaign_category`) VALUES ('1', 'Emergency Medical Care');
+INSERT INTO `sakila`.`campaign_category` (`id`, `campaign_category`) VALUES ('2', 'Food & Water Aid');
+INSERT INTO `sakila`.`campaign_category` (`id`, `campaign_category`) VALUES ('3', 'Refugee Support');
+INSERT INTO `sakila`.`campaign_category` (`id`, `campaign_category`) VALUES ('4', 'Disaster Recovery');
+INSERT INTO `sakila`.`campaign_category` (`id`, `campaign_category`) VALUES ('5', 'Pet Rescue & Adoption');
+INSERT INTO `sakila`.`campaign_category` (`id`, `campaign_category`) VALUES ('6', 'Homelessness Support');
+INSERT INTO `sakila`.`campaign_category` (`id`, `campaign_category`) VALUES ('7', 'Medical Research & Funding');
+INSERT INTO `sakila`.`campaign_category` (`id`, `campaign_category`) VALUES ('8', 'Religious Community Support');

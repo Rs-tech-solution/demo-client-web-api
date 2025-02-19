@@ -1,0 +1,2 @@
+ALTER TABLE `sakila`.`campaigns` 
+CHANGE COLUMN `campaign_updates` `campaign_updates_id` INT NULL DEFAULT NULL ;

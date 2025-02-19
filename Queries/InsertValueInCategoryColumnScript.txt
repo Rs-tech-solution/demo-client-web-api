@@ -1,0 +1,7 @@
+UPDATE `sakila`.`campaigns` SET `category_id` = '5' WHERE (`id` = '3');
+UPDATE `sakila`.`campaigns` SET `category_id` = '2' WHERE (`id` = '4');
+UPDATE `sakila`.`campaigns` SET `category_id` = '8' WHERE (`id` = '5');
+UPDATE `sakila`.`campaigns` SET `category_id` = '1' WHERE (`id` = '7');
+UPDATE `sakila`.`campaigns` SET `category_id` = '7' WHERE (`id` = '9');
+UPDATE `sakila`.`campaigns` SET `category_id` = '4' WHERE (`id` = '1');
+UPDATE `sakila`.`campaigns` SET `category_id` = '1' WHERE (`id` = '2');
