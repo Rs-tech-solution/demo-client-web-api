@@ -1,0 +1,5 @@
+CREATE TABLE `sakila`.`campaign_products` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `product_id` INT NULL,
+  `campaign_id` INT NULL,
+  PRIMARY KEY (`id`));

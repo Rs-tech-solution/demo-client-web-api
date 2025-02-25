@@ -4,7 +4,8 @@ import {
   getDonors,
   getTotals,
   getCategoryFilterCampaign,
-  getCampaignTotalDonation
+  getCampaignTotalDonation,
+  getCampaignProducts
 } from '../Controllers/CampaignController.js';
 import { Routes } from '../Helpers/Types.js';
 import { createControllerRouter } from '../Helpers/Utility.js';
@@ -127,6 +128,10 @@ const routes: Routes = {
   },
   'GET /filter/category': {
     action: getCategoryFilterCampaign,
+  },
+
+  'GET /:id/productList': {
+    action: getCampaignProducts,
   }
 };
 

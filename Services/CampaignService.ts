@@ -6,6 +6,7 @@ import {
   CampaignStatus,
 } from '../Models/CampaignModel.js';
 import { CampaignTotalsType } from '../Models/CampaignTotalsModel.js';
+import { ProductTypeForList } from '../Models/ProductModel.js';
 
 enum campaignQuery {
   GetCampaignList = 'GetCampaignList.sql',
@@ -13,7 +14,8 @@ enum campaignQuery {
   GetCampaignTotals = 'GetCampaignTotals.sql',
   GetCampaignDonors = 'GetCampaignDonors.sql',
   CountDonors = 'CountDonorsQuery.sql',
-  GetCategoryFilterCampaign = 'GetCategoryFilterCampaign.sql',
+  GetCategoryFilterCampaign = 'GetCategoryFilterCampaignQuery.sql',
+  GetCampaignProductList = 'GetCampaignProductListQuery.sql',
 }
 
 export const getList = async (status: string) => {
@@ -70,4 +72,11 @@ export const getCategoryFilterCampaign = async (category: string) => {
 
   const campaignList = (data as CampaignTypeForList[]) || [];
   return campaignList;
+}
+
+export const getCampaignProducts = async (id: number) => {
+  const { data } = await executeQuery(campaignQuery.GetCampaignProductList,{id});
+
+  const productList = (data as ProductTypeForList[]) || [];
+  return productList;
 }

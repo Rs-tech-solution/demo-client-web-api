@@ -1,3 +1,4 @@
+import { ProductTypeForList } from '../Models/ProductModel.js';
 import { ControllerAction } from '../Helpers/Types.js';
 import {
   CampaignTypeForList,
@@ -59,3 +60,11 @@ CampaignTypeForList[]
   
   return await campaignService.getCategoryFilterCampaign(category);
 };
+
+export const getCampaignProducts: ControllerAction<
+ { id: number },
+ ProductTypeForList[]
+> = async (context) => {
+  const {id} = context.params;
+  return await campaignService.getCampaignProducts(id);
+}
