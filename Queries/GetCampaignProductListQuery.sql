@@ -3,7 +3,6 @@ SELECT
     products.id AS product_id,
     products.name,
     products.amount,
-    products.quantity,
     products.image,
     products.description
 FROM
